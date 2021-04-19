@@ -1,0 +1,141 @@
+/* - Mobile: 375px
+- Desktop: 1440px
+
+### Primary
+
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%) */
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 93.75%
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    font-family: Lexend Deca;
+    color: #fff;
+}
+
+.card {
+    width: 85%;
+    padding: 3.5rem 3rem;
+}
+
+.card > h1 {
+    font-family: Big Shoulders Display, cursive;
+    font-size: 2.7rem;
+    padding: 2rem 0;
+    text-transform: uppercase;
+}
+
+.card > p {
+    line-height: 1.8rem;
+    margin-bottom: 2.5rem;
+}
+
+.one {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: .5rem .5rem 0 0;
+}
+
+.two {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.three {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 .5rem .5rem;
+}
+
+.button {
+    background-color: #fff;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    color:hsl(31, 77%, 52%);
+}
+
+.button:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: #fff;
+    border: solid #fff;
+    box-sizing: border-box;
+}
+
+.two > .button {
+    color:hsl(184, 100%, 22%);
+}
+
+.two > .button:hover {
+background-color: hsl(184, 100%, 22%);
+color: #fff;
+border: solid #fff;
+box-sizing: border-box;
+}
+
+.three > .button {
+    color:hsl(179, 100%, 13%);
+}
+
+.three > .button:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: #fff;
+    border: solid #fff;
+    box-sizing: border-box;
+    }
+
+.attribution {
+    margin-top: 2rem;
+    font-family: Lexend Deca;
+    font-size: 11px;
+    text-align: center;
+}
+    
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 700px) {
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: auto;
+        height: 100vh;
+    }
+
+    .card {
+        width: 20rem;
+    }
+
+    .card > p {
+        margin-bottom: 6rem;
+    }
+
+    .one {
+        border-radius: .5rem 0 0 .5rem;
+    }
+    
+    .three {
+        border-radius: 0 .5rem .5rem 0;
+    }
+}
